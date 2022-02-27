@@ -1,0 +1,11 @@
+.form-block{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &__content{
+        width: 1100px;
+        min-height: 628px;
+        background: $tertiary-bg-color;
+        border-radius: 10px;
+    }
+}
