@@ -1,0 +1,39 @@
+.card{
+    width: 540px;
+    height: 308px;
+    background: $tertiary-bg-color;
+    border-radius: 20px;
+    padding: 40px 0px 0px 40px;
+
+    &__title{
+        color: $third-text-color;
+        min-width: 18px;
+        min-height: 20px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    &__main-title{
+        width: 460px;
+        min-height: 76px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: $second-text-color;
+        margin-top: 20px;
+    }
+    
+    &__text{
+        width: 460px;
+        min-height: 72px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $third-text-color;
+        margin-top: 40px;
+    }
+}
