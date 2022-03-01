@@ -1,11 +1,24 @@
 .header{
+    box-sizing: border-box;
     max-width: 1420px;
     height: 640px;
     background-color: $secondary-bg-color;
     border-radius: 20px;
-    margin: 10px 10px 0px;
+    margin: 0 auto;
     padding: 30px 0px 0px 160px;
     position: relative;
+
+    @include tablet{
+        max-width: 748px;
+        height: 602px;
+        padding: 30px 0px 0px 50px;
+    }
+
+    @include mobile{
+        max-width: 300px;
+        height: 898px;
+        padding: 20px;
+    }
 
     &__logo{
         border-radius: 50%;
@@ -26,6 +39,22 @@
         line-height: 69px;
         color: $primary-bg-color;
         margin: 60px 0px 0px 0px;
+
+        @include tablet{
+            width: 360px;
+            min-height: 74px;
+            font-size: 33px;
+            line-height: 37px;
+            margin: 50px 0px 0px 0px;
+        }
+
+        @include mobile{
+            width: 260px;
+            min-height: 58px;
+            font-size: 24px;
+            line-height: 29px;
+
+        }
     }
 
     &__text{
@@ -37,19 +66,63 @@
         line-height: 26px;
         color: rgba(255, 255, 255, 0.7);
         margin: 28px 0px 0px 0px;
+
+        @include tablet{
+            width: 360px;
+            min-height: 40px;
+            font-size: 15px;
+            line-height: 20px;
+            margin: 20px 0px 0px 0px;
+        }
+
+        @include mobile{
+            width: 260px;
+            min-height: 30px;
+            font-size: 12px;
+            line-height: 15px;
+            margin: 14px 0px 0px 0px;
+        }
     }
 
     &__img{
         width: 311px;
-        height: 675px;
+        height: 630px;
         position: absolute;
-        left: 899px;
-        top: 40px;
+        left: 63%;
+        bottom: -30px   ;
         filter: drop-shadow(0px 4px 80px rgba(0, 0, 0, 0.25));
         border-radius: 30px;
+
+        @include tablet{
+            width: 250px;
+            height: 502px;
+            bottom: -20px;
+            left: 61%;
+        }
+
+        @include mobile{
+            width: 260px;
+            height: 522px;
+            left: 20px;
+            bottom: 114px;
+        }
     }
 
     &__button{
         margin: 108px 0px 0px 0px;
+        width: 240px;
+        height: 54px;
+
+        @include tablet{
+            margin: 250px 0px 0px 0px;
+            height: 48px;
+        }
+
+        @include mobile{
+            width: 260px;
+            height: 44px;
+            margin: 622px 0px 0px 0px;
+            align-self: center;
+        }
     }
 }
