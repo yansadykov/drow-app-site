@@ -1,8 +1,17 @@
 .form{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 60px;
+
+    @include tablet {
+        padding: 30px;
+    }
+
+    @include mobile{
+        padding: 20px;
+    }
     
 
     &__title{
@@ -15,6 +24,18 @@
         line-height: 38px;
         text-align: center;
         color: $second-text-color;
+
+        @include tablet {
+            min-height: 31px;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 31px;
+        }
+
+        @include mobile{
+            width: 260px;
+            min-height: 62px;
+        }
     }
 
     &__subtitle{
@@ -27,16 +48,40 @@
         line-height: 24px;
         text-align: center;
         color: $third-text-color;
+
+        @include tablet{
+            margin: 24px auto 100px;
+            min-height: 20px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        @include mobile{ 
+            width: 260px;
+            min-height: 40px;
+            margin: 20px auto 80px;
+        }
     }
 
     &__input-container{
         margin: 20px auto 0;
         width: 980px;
         display: flex;
+        gap: 40px;
+
+        @include tablet{
+            width: 470px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @include mobile{
+            width: 260px;
+        }
     }
 
     &__user-info{
-        width: 470px;
+        box-sizing: border-box;
         height: 54px;
         padding-left: 20px;
         background: $primary-bg-color;
@@ -57,13 +102,10 @@
             line-height: 24px;
             color: rgba(17, 17, 17, 0.3);
         }
-
-        &:first-child{
-            margin-right: 40px;
-        }
     }
 
     &__user-massage{
+        box-sizing: border-box;
         background-color: $primary-bg-color;
         color: rgba(17, 17, 17);
         border-radius: 8px;
@@ -76,6 +118,14 @@
         font-size: 16px;
         line-height: 24px;
         font-family: "Inter", Arial, Helvetica, sans-serif;
+
+        @include tablet{
+            max-width: 470px;
+        }
+
+        @include mobile{
+            max-width: 260px;
+        }
 
         &::placeholder{
             width: 430px;
@@ -92,6 +142,20 @@
         background: $secondary-bg-color;
         color: $primary-bg-color;
         margin-top: 30px;
+        width: 194px;
+        height: 54px;
+
+        @include tablet{
+            margin-top: 50px;
+            width: 470px;
+            height: 48px;
+            align-self: center;
+        }
+        @include mobile{
+            width: 260px;
+            height: 44px;
+
+        }
     }
     
 }

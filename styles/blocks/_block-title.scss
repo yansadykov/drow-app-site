@@ -1,0 +1,26 @@
+.block-title{
+    color: $second-text-color;
+    width: 1103px;
+    min-height: 204px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 68px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+
+    @include tablet{
+        width: 648px;
+        min-height: 111px;
+        font-size: 33px;
+        line-height: 37px;
+        padding-bottom: 70px;
+    }
+
+    @include mobile{
+        width: 260px;
+        min-height: 186px;
+        font-size: 26px;
+        line-height: 31px;     
+    }
+}

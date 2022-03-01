@@ -1,7 +1,4 @@
 .button{
-    width: 240px;
-    height: 54px;
-    background: $primary-bg-color;
     border-radius: 8px;
     border: none;
 
@@ -9,4 +6,11 @@
         opacity: .6;
         cursor: pointer;
     }
+    @include tablet{
+
+    }
+    @include mobile{
+
+    }
 }
+

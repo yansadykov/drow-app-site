@@ -1,5 +1,30 @@
 .two-cards{
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+    margin: 0 auto;
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-self: center;
+    
+
+        @include tablet{
+            gap: 10px;
+        }
+
+        @include mobile{
+            flex-direction: column;
+            width: 300px;
+            height: 284px;
+            overflow: hidden;
+            gap: 0px;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+    }
+
 }
+
+
