@@ -1,6 +1,6 @@
 .block-title{
     color: $second-text-color;
-    width: 1103px;
+    max-width: 1103px;
     min-height: 204px;
     font-style: normal;
     font-weight: 600;
@@ -10,7 +10,7 @@
     padding-bottom: 120px;
 
     @include tablet{
-        width: 648px;
+        max-width: 648px;
         min-height: 111px;
         font-size: 33px;
         line-height: 37px;
