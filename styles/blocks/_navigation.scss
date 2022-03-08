@@ -23,13 +23,14 @@
         &_active{
             background: #212121;
         }
-    }
-    
-    &:hover{
+
+        &:hover{
             cursor: pointer;
             opacity: .8;
         }
     }
+    }
+   
 
     &__input{
         position: absolute;

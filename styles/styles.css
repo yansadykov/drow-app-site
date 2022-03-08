@@ -748,7 +748,7 @@
   .navigation__bar_active {
     background: #212121;
   }
-  .navigation:hover {
+  .navigation__bar:hover {
     cursor: pointer;
     opacity: 0.8;
   }
