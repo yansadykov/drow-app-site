@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>"Каляка" скоро!</title>
         <link rel="stylesheet" href="./styles/styles.css" />
     </head>
 
@@ -26,7 +26,7 @@
         <main class="sections">
             <section class="two-cards">
                 <div class="two-cards__content">
-                    <div class="card">
+                    <div class="card slide">
                         <p class="card__title">AI</p>
                         <h3 class="card__main-title">Умный интелект приложения</h3>
                         <p class="card__text">С помощью AI приложение анализирует картины мастеров и современных практиков рисования, и достраивает картину за вас.</p>
@@ -40,11 +40,9 @@
                 </div>
 
                 <div class="navigation">
-                    <input type="radio" name="card-radio" id="r1" class="navigation__input" checked />
-                    <input type="radio" name="card-radio" id="r2" class="navigation__input" />
-
-                    <label for="r1" class="navigation__bar s1"></label>
-                    <label for="r2" class="navigation__bar s2"></label>
+                    
+                    <button class="navigation__bar slider-prev navigation__bar_active"></button>
+                    <button class="navigation__bar slider-next"></button>
                 </div>
             </section>
 
@@ -55,7 +53,7 @@
                     <div class="demo-block__content-item">
                         <img src="./images/content-item1.png" alt="смартфон" class="image" />
                     </div>
-                    <div class="demo-block__content-item">
+                    <div class="demo-block__content-item slide-demo">
                         <img src="./images/content-item2.png" alt="смартфон" class="image" />
                     </div>
                     <div class="demo-block__content-item">
@@ -64,17 +62,15 @@
                 </div>
 
                 <div class="navigation">
-                    <input type="radio" name="demo-radio" id="r3" class="navigation__input" checked />
-                    <input type="radio" name="demo-radio" id="r4" class="navigation__input" />
 
-                    <label for="r3" class="navigation__bar s3"></label>
-                    <label for="r4" class="navigation__bar s4"></label>
+                    <button class="navigation__bar slider-demo-prev navigation__bar_active"></button>
+                    <button class="navigation__bar slider-demo-next"></button>
                 </div>
             </section>
 
             <section class="two-cards">
                 <div class="two-cards__content">
-                    <div class="card">
+                    <div class="card card-slide">
                         <p class="card__title">Быстро</p>
                         <h3 class="card__main-title">Проблем с рисованием — нет</h3>
                         <p class="card__text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...</p>
@@ -88,11 +84,9 @@
                 </div>
 
                 <div class="navigation">
-                    <input type="radio" name="card-radio-s" id="r5" class="navigation__input" checked />
-                    <input type="radio" name="card-radio-s" id="r6" class="navigation__input" />
 
-                    <label for="r5" class="navigation__bar s5"></label>
-                    <label for="r6" class="navigation__bar s6"></label>
+                    <button class="navigation__bar card-slider-prev navigation__bar_active"></button>
+                    <button class="navigation__bar card-slider-next"></button>
                 </div>
             </section>
 
@@ -100,7 +94,7 @@
                 <h2 class="block-title">Качайте приложение и улучшайте свои художества, а потом хвастайтесь ими!</h2>
 
                 <div class="form-block__content">
-                    <form action="" class="form">
+                    <form action="#" class="form">
                         <h3 class="form__title">Хотите нам что-то посоветовать?</h3>
                         <p class="form__subtitle">Оставьте заявку и мы свяжемся с вами.</p>
 
@@ -110,7 +104,7 @@
                         </div>
 
                         <div class="form__input-container">
-                            <textarea type="textarea" class="form__user-massage" placeholder="Сообщение"></textarea>
+                            <textarea class="form__user-massage" placeholder="Сообщение"></textarea>
                         </div>
 
                         <button class="button form__button">Оставить заявку</button>
@@ -128,5 +122,6 @@
                 <img src="./images/footer-img.png" alt="смартфон" class="image image_footer" />
             </div>
         </footer>
+        <script src="./scripts/script.js"></script>
     </body>
 </html>

@@ -5,6 +5,7 @@
     background: $tertiary-bg-color;
     border-radius: 20px;
     padding: 40px 40px;
+    transition: all .3s ease;
 
     @include tablet {
         max-width: 349px;
