@@ -1,0 +1,16 @@
+.button{
+    border-radius: 8px;
+    border: none;
+
+    &:hover{
+        opacity: .6;
+        cursor: pointer;
+    }
+    @include tablet{
+
+    }
+    @include mobile{
+
+    }
+}
+

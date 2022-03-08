@@ -1,0 +1,73 @@
+.card{
+    box-sizing: border-box;
+    max-width: 540px;
+    min-height: 308px;
+    background: $tertiary-bg-color;
+    border-radius: 20px;
+    padding: 40px 40px;
+    transition: all .3s ease;
+
+    @include tablet {
+        max-width: 349px;
+        min-height: 284px;
+        padding: 30px 30px;
+    }
+
+    @include mobile{
+        width: 100%;
+        min-height: 100%;
+        padding: 20px;
+    }
+
+    &__title{
+        color: $third-text-color;
+        min-width: 18px;
+        min-height: 20px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0px;
+       
+
+        @include tablet{
+            font-size: 15px;
+        }
+    }
+    
+    &__main-title{
+        max-width: 460px;
+        min-height: 76px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: $second-text-color;
+        margin: 20px 0px 0px 0px;
+       
+
+        @include tablet{
+            font-size: 26px;
+            line-height: 31px;
+            margin: 12px 0px 0px 0px;
+        }
+    }
+    
+    &__text{
+        max-width: 460px;
+        min-height: 72px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $third-text-color;
+        margin: 40px 0px 0px 0px;
+    
+
+        @include tablet{
+            font-size: 15px;
+            line-height: 20px;
+            margin: 50px 0px 0px 0px;
+        }
+    }
+}

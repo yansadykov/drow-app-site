@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>"Каляка" скоро!</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+
+    <body class="page">
+        <header class="header">
+            <div class="header__logo"></div>
+
+            <div class="header__content">
+                <h1 class="header__title">Не умеете рисовать? Не беда!</h1>
+                <p class="header__text">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>
+            </div>
+
+            <button class="header__button button">Подробнее</button>
+            <div class="header__img">
+                <img src="./images/headerimg.png" alt="смартфон" class="image image_header" />
+            </div>
+        </header>
+
+        <main class="sections">
+            <section class="two-cards">
+                <div class="two-cards__content">
+                    <div class="card slide">
+                        <p class="card__title">AI</p>
+                        <h3 class="card__main-title">Умный интелект приложения</h3>
+                        <p class="card__text">С помощью AI приложение анализирует картины мастеров и современных практиков рисования, и достраивает картину за вас.</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="card__title">Ч/Б и Цвет</p>
+                        <h3 class="card__main-title">Рисуйте в любом стиле</h3>
+                        <p class="card__text">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в любой ситуации.</p>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    
+                    <button class="navigation__bar slider-prev navigation__bar_active"></button>
+                    <button class="navigation__bar slider-next"></button>
+                </div>
+            </section>
+
+            <section class="demo-block">
+                <h2 class="block-title">Чик-чирик и ваша каляка превращается в изумительное произведение искусства.</h2>
+
+                <div class="demo-block__content">
+                    <div class="demo-block__content-item">
+                        <img src="./images/content-item1.png" alt="смартфон" class="image" />
+                    </div>
+                    <div class="demo-block__content-item slide-demo">
+                        <img src="./images/content-item2.png" alt="смартфон" class="image" />
+                    </div>
+                    <div class="demo-block__content-item">
+                        <img src="./images/content-item3.png" alt="смартфон" class="image" />
+                    </div>
+                </div>
+
+                <div class="navigation">
+
+                    <button class="navigation__bar slider-demo-prev navigation__bar_active"></button>
+                    <button class="navigation__bar slider-demo-next"></button>
+                </div>
+            </section>
+
+            <section class="two-cards">
+                <div class="two-cards__content">
+                    <div class="card card-slide">
+                        <p class="card__title">Быстро</p>
+                        <h3 class="card__main-title">Проблем с рисованием — нет</h3>
+                        <p class="card__text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...</p>
+                    </div>
+
+                    <div class="card">
+                        <p class="card__title">Просто</p>
+                        <h3 class="card__main-title">Нарисовали, преобразовали, сохранили</h3>
+                        <p class="card__text">Раз, два, три, больше нечего тут рассказать.</p>
+                    </div>
+                </div>
+
+                <div class="navigation">
+
+                    <button class="navigation__bar card-slider-prev navigation__bar_active"></button>
+                    <button class="navigation__bar card-slider-next"></button>
+                </div>
+            </section>
+
+            <section class="form-block">
+                <h2 class="block-title">Качайте приложение и улучшайте свои художества, а потом хвастайтесь ими!</h2>
+
+                <div class="form-block__content">
+                    <form action="#" class="form">
+                        <h3 class="form__title">Хотите нам что-то посоветовать?</h3>
+                        <p class="form__subtitle">Оставьте заявку и мы свяжемся с вами.</p>
+
+                        <div class="form__input-container">
+                            <input type="text" name="usecard-radio-same" class="form__user-info" placeholder="Ваше Имя" />
+                            <input type="email" name="usermail" class="form__user-info" placeholder="Контактный Email" />
+                        </div>
+
+                        <div class="form__input-container">
+                            <textarea class="form__user-massage" placeholder="Сообщение"></textarea>
+                        </div>
+
+                        <button class="button form__button">Оставить заявку</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h3 class="footer__title">Хотите скачать приложение?</h3>
+            <p class="footer__subtitle">Качайте в ЭпСтор и ГуглПлэй.</p>
+
+            <button class="button footer__button">Уже скоро!</button>
+            <div class="footer__img">
+                <img src="./images/footer-img.png" alt="смартфон" class="image image_footer" />
+            </div>
+        </footer>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
